@@ -1,0 +1,16 @@
+---
+- hosts: target
+  become: true
+  tasks:
+  - name: 'install kernel updates'
+    yum:
+      name: 'kernel'
+      state: 'latest'
+
+#  - name: 'install other updates'
+#    yum:
+#      disablerepo: '*'
+#      enablerepo: 'CentOS-7*'
+#      name: '*'
+#      state: 'latest'
+#      ignore_errors: yes
