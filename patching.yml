@@ -6,7 +6,7 @@
     yum:
       name: 'kernel'
       state: 'latest'
-      ignore_errors: yes
+   
 
   - name: 'install other updates'
     yum:
@@ -14,4 +14,4 @@
       enablerepo: 'epel,ol7_latest'
       name: '*'
       state: 'latest'
-      ignore_errors: yes
+      
