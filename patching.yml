@@ -6,6 +6,7 @@
     yum:
       name: 'kernel'
       state: 'latest'
+      ignore_errors: yes
 
  - name: 'install other updates'
     yum:
