@@ -7,10 +7,10 @@
       name: 'kernel'
       state: 'latest'
 
-#  - name: 'install other updates'
-#    yum:
-#      disablerepo: '*'
-#      enablerepo: 'CentOS-7*'
-#      name: '*'
-#      state: 'latest'
-#      ignore_errors: yes
+ - name: 'install other updates'
+    yum:
+#     disablerepo: '*'
+      enablerepo: 'epel,ol7_latest'
+      name: '*'
+      state: 'latest'
+      ignore_errors: yes
