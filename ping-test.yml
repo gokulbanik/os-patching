@@ -1,6 +1,8 @@
 -
   name: ping test
   hosts: target
+  vars_files:
+  - "vars/main.yml"
   tasks:
     - name: ping test
       ping:
